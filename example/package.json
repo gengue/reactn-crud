@@ -1,0 +1,27 @@
+{
+  "name": "reactn-crud-example",
+  "homepage": "https://Genesis Guerrero &lt;genesisdaft@gmail.com&gt; (https://github.com/gengue).github.io/reactn-crud",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "prop-types": "^15.6.2",
+    "query-string": "^6.8.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^1.1.4",
+    "reactn": "^2.2.1",
+    "reactn-crud": "file:..",
+    "reactn-devtools": "^1.0.1",
+    "redux": "^4.0.4",
+    "use-debounce": "^2.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

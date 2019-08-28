@@ -1,0 +1,15 @@
+body {
+  background: #f7f7fa !important;
+}
+
+.MainLayout-page {
+  margin: 24px 16px 0;
+  overflow: initial;
+}
+.MainLayout-header {
+  margin-bottom: 20px;
+}
+.MainLayout-content {
+  padding: 20px;
+  background: #fff;
+}
