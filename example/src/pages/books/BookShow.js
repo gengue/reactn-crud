@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShowController } from './../../ant-ui';
+import { ShowController } from 'reactn-crud-ui-antd';
 import { Provider } from 'reactn-crud';
 
 function BookShow(props) {

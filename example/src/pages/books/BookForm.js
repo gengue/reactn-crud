@@ -1,6 +1,6 @@
 import React from 'react';
 import { Input } from 'antd';
-import { FormController } from './../../ant-ui';
+import { FormController } from 'reactn-crud-ui-antd';
 import { Provider } from 'reactn-crud';
 
 function BookForm(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShowController } from './../../ant-ui';
+import { ShowController } from 'reactn-crud-ui-antd';
 import { Provider } from 'reactn-crud';
 
 function UserShow(props) {

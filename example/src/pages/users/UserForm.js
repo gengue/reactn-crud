@@ -1,8 +1,8 @@
 import React from 'react';
 import { Input } from 'antd';
-import { FormController } from './../../ant-ui';
-import SelectPickerFetch from './../../components/SelectPickerFetch';
+import { FormController } from 'reactn-crud-ui-antd';
 import { Provider } from 'reactn-crud';
+import SelectPickerFetch from './../../components/SelectPickerFetch';
 
 function UserForm(props) {
   return (

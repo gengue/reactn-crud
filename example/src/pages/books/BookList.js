@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListController } from './../../ant-ui';
+import { ListController } from 'reactn-crud-ui-antd';
 import { Provider } from 'reactn-crud';
 
 function BookListList(props) {
