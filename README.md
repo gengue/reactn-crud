@@ -131,4 +131,4 @@ Here some available ui plugins:
 
 ## License
 
-MIT © [Genesis Guerrero &lt;genesisdaft@gmail.com&gt; (https://github.com/gengue)](https://github.com/Genesis Guerrero &lt;genesisdaft@gmail.com&gt; (https://github.com/gengue))
+[MIT](LICENSE.md) © [Genesis Guerrero](https://github.com/gengue)

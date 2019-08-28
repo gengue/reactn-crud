@@ -1,8 +1,13 @@
 {
   "name": "reactn-crud",
   "version": "1.0.0",
-  "description": "ReactN CRUD",
-  "author": "Genesis Guerrero &lt;genesisdaft@gmail.com&gt; (https://github.com/gengue)",
+  "description": "ReactN CRUD is a frontent lib for build CRUD pages using reactn",
+  "keywords": [
+    "react",
+    "reactjs",
+    "reactn"
+  ],
+  "author": "Genesis Guerrero <genesisdaft@gmail.com>; (https://github.com/gengue)",
   "license": "MIT",
   "repository": "github:gengue/reactn-crud",
   "main": "dist/index.js",
