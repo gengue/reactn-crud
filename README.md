@@ -121,8 +121,8 @@ React CRUD is ui-agnostic, but is relatively easy create controller components w
 
 Here some available ui plugins:
 
-* [antd-design](https://github/gengue.com/reactn-crud-ui-antd)
-* [material-ui](https://github/gengue.com/reactn-crud-ui-material)
+* [antd-design](https://github.com/gengue/reactn-crud-ui-antd)
+* [material-ui](https://github.com/gengue/reactn-crud-ui-material)
 
 ## TODO
 
