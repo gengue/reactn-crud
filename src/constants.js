@@ -1,5 +1,4 @@
 // store namespace
-export const APP_KEY = 'rc_admin';
 export const PREFIX = 'RC/CRUD/';
 
 // Function names
@@ -31,4 +30,5 @@ export const DEFAULT_CONFIG = {
   hasCreate: true,
   hasDelete: true,
   components: {},
+  initialParams: {},
 };

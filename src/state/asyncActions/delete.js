@@ -20,7 +20,7 @@ function deleteResource(dispatchers, resource) {
         async function(response) {
           const global = await dispatchers.deleteSuccess({ payload: id }, meta);
           // call side effect
-          const state = global.vadmin.resources[resource];
+          const state = global.resources[resource];
           if (sideEffectsCb)
             sideEffectsCb({ success: true, state }, dispatchers);
         },
@@ -28,7 +28,7 @@ function deleteResource(dispatchers, resource) {
           // dispatch the error action
           const global = await dispatchers.deleteError({ error }, meta);
           // call side effect
-          const state = global.vadmin.resources[resource];
+          const state = global.resources[resource];
           if (sideEffectsCb)
             sideEffectsCb({ success: false, state, error }, dispatchers);
         }

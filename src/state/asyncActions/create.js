@@ -25,7 +25,7 @@ function create(dispatchers, resource) {
             meta
           );
           // call side effect
-          const state = global.vadmin.resources[resource];
+          const state = global.resources[resource];
           if (sideEffectsCb)
             sideEffectsCb({ success: true, state, record }, dispatchers);
         },
@@ -33,7 +33,7 @@ function create(dispatchers, resource) {
           // dispatch the error action
           const global = await dispatchers.createError({ error }, meta);
           // call side effect
-          const state = global.vadmin.resources[resource];
+          const state = global.resources[resource];
           if (sideEffectsCb)
             sideEffectsCb({ success: false, state, error }, dispatchers);
         }

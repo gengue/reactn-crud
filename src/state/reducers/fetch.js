@@ -2,7 +2,6 @@ import Provider from './../../Provider';
 import {
   FETCH_START,
   FETCH_ERROR,
-  APP_KEY,
   PREFIX,
   LOADING_KEY,
   SAVING_KEY,
@@ -26,10 +25,8 @@ export function fetchReducers() {
         key = SAVING_KEY;
       }
       return {
-        [APP_KEY]: {
-          ...global[APP_KEY],
-          [key]: true,
-        },
+        ...global,
+        [key]: true,
       };
     },
     [ACTION_NAME_ERROR]: (global, dispatch, action, meta) => {
@@ -42,14 +39,12 @@ export function fetchReducers() {
         key = SAVING_KEY;
       }
       return {
-        [APP_KEY]: {
-          ...global[APP_KEY],
-          [key]: false,
-          resources: {
-            [meta.resource]: {
-              ...global[APP_KEY].resources[meta.resource],
-              error: action.error.toString(),
-            },
+        ...global,
+        [key]: false,
+        resources: {
+          [meta.resource]: {
+            ...global.resources[meta.resource],
+            error: action.error.toString(),
           },
         },
       };

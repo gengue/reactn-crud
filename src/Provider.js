@@ -1,10 +1,9 @@
 import { createProvider } from 'reactn';
-import { APP_KEY } from './constants';
+import { LOADING_KEY } from './constants';
 
 const INITIAL_STATE = {
-  [APP_KEY]: {
-    resources: {},
-  },
+  resources: {},
+  [LOADING_KEY]: false,
 };
 
 const Provider = createProvider(INITIAL_STATE);

@@ -1,6 +1,6 @@
-import BookForm from './BookForm';
-import BookList from './BookList';
-import BookShow from './BookShow';
+//import BookForm from './BookForm';
+//import BookList from './BookList';
+//import BookShow from './BookShow';
 import { crud } from 'reactn-crud';
 
 const config = {
@@ -8,18 +8,13 @@ const config = {
     basePath: '/',
   },
   components: {
-    List: BookList,
-    Create: BookForm,
-    Edit: BookForm,
-    Show: BookShow,
+    //List: BookList,
+    //Create: BookForm,
+    //Edit: BookForm,
+    //Show: BookShow,
   },
+  initialParams: {},
 };
-const { routes } = crud('books', config);
+export const { actions, routes } = crud('books', config);
 
-export default {
-  routes,
-  list: BookList,
-  create: BookForm,
-  edit: BookForm,
-  show: BookShow,
-};
+export default routes;

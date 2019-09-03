@@ -1,5 +1,4 @@
 import Provider from './../Provider';
-import { APP_KEY } from './../constants';
 import dispatchers from './dispatchers';
 import { fetchList, fetchOne, create, update, remove } from './asyncActions';
 
@@ -13,10 +12,10 @@ import { fetchList, fetchOne, create, update, remove } from './asyncActions';
  * @returns {object} - object of functions (action creators)
  */
 export function actionsFor(resource, config) {
-  const admin = Provider.getGlobal()[APP_KEY];
+  const { resources } = Provider.getGlobal();
 
   // initialize admin schema or resource
-  if (!admin || !admin.resources || !admin.resources[resource]) {
+  if (!resources || !resources[resource]) {
     dispatchers.registerResource({}, { resource, config });
   } else {
     console.warn('Resource already exists');

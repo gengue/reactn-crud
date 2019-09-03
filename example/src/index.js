@@ -14,7 +14,7 @@ const dataProvider = mockApiClient(
 settings.set('dataProvider', dataProvider);
 // redux dev tools
 addReactNDevTools();
-addReactNDevTools(Provider);
+addReactNDevTools(Provider, { name: 'ReactN_CRUD_demo' });
 
 ReactDOM.render(
   <Provider>

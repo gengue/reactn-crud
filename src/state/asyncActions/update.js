@@ -1,4 +1,4 @@
-import { UPDATE, APP_KEY } from './../../constants';
+import { UPDATE } from './../../constants';
 import settings from './../../settings';
 
 /**
@@ -24,7 +24,7 @@ function update(dispatchers, resource) {
             meta
           );
           // call side effects
-          const state = global[APP_KEY].resources[resource];
+          const state = global.resources[resource];
           if (sideEffectsCb)
             sideEffectsCb({ success: true, state, record }, dispatchers);
         },
@@ -32,7 +32,7 @@ function update(dispatchers, resource) {
           // dispatch the error action
           const global = await dispatchers.fetchError({ error }, meta);
           // call side effects
-          const state = global[APP_KEY].resources[resource];
+          const state = global.resources[resource];
           if (sideEffectsCb)
             sideEffectsCb({ success: false, state, error }, dispatchers);
         }

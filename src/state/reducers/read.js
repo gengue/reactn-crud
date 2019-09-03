@@ -1,11 +1,5 @@
 import Provider from './../../Provider';
-import {
-  GET_LIST,
-  GET_ONE,
-  PREFIX,
-  LOADING_KEY,
-  APP_KEY,
-} from './../../constants';
+import { GET_LIST, GET_ONE, PREFIX, LOADING_KEY } from './../../constants';
 
 function getSuccess() {
   return (global, dispatch, action, meta) => {
@@ -24,27 +18,24 @@ function getSuccess() {
       }, {});
     }
     const { resource } = meta;
-    const admin = { ...global[APP_KEY] };
-    const { resources } = admin;
+    const { resources } = global;
 
     return {
-      [APP_KEY]: {
-        ...admin,
-        [LOADING_KEY]: false,
-        resources: {
-          ...resources,
-          [resource]: {
-            ...resources[resource],
-            data: meta.replace
-              ? newData
-              : { ...resources[resource].data, ...newData },
-            list: {
-              ...resources[resource].list,
-              // params: { ...resources[resource].list.params, ...action.params },
-              ids,
-              loadedOnce: true,
-              total: action.total,
-            },
+      ...global,
+      [LOADING_KEY]: false,
+      resources: {
+        ...resources,
+        [resource]: {
+          ...resources[resource],
+          data: meta.replace
+            ? newData
+            : { ...resources[resource].data, ...newData },
+          list: {
+            ...resources[resource].list,
+            // params: { ...resources[resource].list.params, ...action.params },
+            ids,
+            loadedOnce: true,
+            total: action.total,
           },
         },
       },
