@@ -1,11 +1,11 @@
-//import CountryList from './CountryList';
+import CountryList from './CountryList';
 import { crud } from 'reactn-crud';
 
 const config = {
   basePath: '/',
   hasDelete: false,
   components: {
-    //List: CountryList,
+    List: CountryList,
   },
 };
 export const { actions, routes } = crud('countries', config);

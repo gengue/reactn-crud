@@ -1,6 +1,6 @@
-//import BookForm from './BookForm';
-//import BookList from './BookList';
-//import BookShow from './BookShow';
+import BookForm from './BookForm';
+import BookList from './BookList';
+import BookShow from './BookShow';
 import { crud } from 'reactn-crud';
 
 const config = {
@@ -8,10 +8,10 @@ const config = {
     basePath: '/',
   },
   components: {
-    //List: BookList,
-    //Create: BookForm,
-    //Edit: BookForm,
-    //Show: BookShow,
+    List: BookList,
+    Create: BookForm,
+    Edit: BookForm,
+    Show: BookShow,
   },
   initialParams: {},
 };
