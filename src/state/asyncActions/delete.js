@@ -26,7 +26,7 @@ function deleteResource(dispatchers, resource) {
         },
         async function(error) {
           // dispatch the error action
-          const global = await dispatchers.deleteError({ error }, meta);
+          const global = await dispatchers.fetchError({ error }, meta);
           // call side effect
           const state = global.resources[resource];
           if (sideEffectsCb)
