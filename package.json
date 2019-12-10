@@ -50,7 +50,7 @@
     "gh-pages": "^1.2.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "^3.1.1",
+    "react-scripts": "^3.3.0",
     "reactn": "^2.2.1",
     "rollup": "^0.64.1",
     "rollup-plugin-babel": "^3.0.7",
@@ -64,5 +64,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "np": "^5.2.1"
+  }
 }
