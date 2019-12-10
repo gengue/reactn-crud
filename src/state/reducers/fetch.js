@@ -42,6 +42,7 @@ export function fetchReducers() {
         ...global,
         [key]: false,
         resources: {
+          ...global.resources,
           [meta.resource]: {
             ...global.resources[meta.resource],
             error: action.error.toString(),
